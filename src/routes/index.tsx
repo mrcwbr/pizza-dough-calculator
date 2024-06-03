@@ -10,11 +10,10 @@ export default component$(() => {
 
   return (
     <>
-      <div class="mx-auto max-w-7xl px-4 py-12">
-        <Section
-          title="Setup"
-          subtitle="For how many people do you want to make pizza and how much dough do you want to use per pizza?"
-        />
+      <Section
+        title="🎉 Party"
+        subtitle="For how many people do you want to make pizza and how much dough do you want to use per pizza?"
+      >
         <div class="mt-4 flex gap-4">
           <Counter
             name="Pizzas"
@@ -35,19 +34,21 @@ export default component$(() => {
             onIncrement$={() => (state.gram += 10)}
           />
         </div>
-      </div>
+      </Section>
+
       <Ingredients pizzas={state.pizzas} gram={state.gram} />
+
       <Procedure />
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "My Pizza Calculator",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Calculate the ingredients for your pizza dough.",
     },
   ],
 };
