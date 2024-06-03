@@ -35,7 +35,7 @@ Inside your project, you'll see the following directory structure:
 Use the `npm run qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
 
 ```shell
-npm run qwik add # or `yarn qwik add`
+npm run qwik add 
 ```
 
 ## Development
@@ -43,7 +43,7 @@ npm run qwik add # or `yarn qwik add`
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
-npm start # or `yarn start`
+npm start 
 ```
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
