@@ -9,7 +9,7 @@ A simple pizza calculator built with [Qwik](https://qwik.dev), a new framework f
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
-npm start 
+npm start
 ```
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.

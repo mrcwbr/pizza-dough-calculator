@@ -1,15 +1,7 @@
 {
   "name": "my-qwik-empty-starter",
-  "description": "App with Routing built-in ready to create your app",
-  "engines": {
-    "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
-  },
-  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
   "private": true,
-  "trustedDependencies": [
-    "sharp"
-  ],
-  "trustedDependencies-annotation": "Needed for bun to allow running install scripts",
+  "description": "App with Routing built-in ready to create your app",
   "type": "module",
   "scripts": {
     "build": "qwik build",
@@ -23,8 +15,11 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "lint:fix": "eslint \"src/**/*.ts*\" --fix",
     "preview": "qwik build preview && vite preview --open",
-    "start": "vite --open --mode ssr",
-    "qwik": "qwik"
+    "qwik": "qwik",
+    "start": "vite --open --mode ssr"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.5.5",
@@ -47,7 +42,12 @@
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "dependencies": {
-    "sharp": "^0.33.4"
-  }
+  "engines": {
+    "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
+  },
+  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
+  "trustedDependencies": [
+    "sharp"
+  ],
+  "trustedDependencies-annotation": "Needed for bun to allow running install scripts"
 }

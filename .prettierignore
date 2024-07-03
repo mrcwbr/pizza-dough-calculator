@@ -1,4 +1,3 @@
-**/*.log
 **/.DS_Store
 *.
 .vscode/settings.json
@@ -11,7 +10,6 @@ bazel-qwik
 bazel-testlogs
 dist
 dist-dev
-lib
 lib-types
 etc
 external
@@ -23,15 +21,9 @@ target
 output
 rollup.config.js
 build
-.cache
-.vscode
 .rollup.cache
-tsconfig.tsbuildinfo
 vite.config.ts
-*.spec.tsx
-*.spec.ts
 .netlify
 pnpm-lock.yaml
 package-lock.json
-yarn.lock
 server
