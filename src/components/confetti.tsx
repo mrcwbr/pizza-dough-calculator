@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from '@builder.io/qwik';
 
 type Props = {
   title: string;
@@ -7,16 +7,16 @@ type Props = {
 export default component$<Props>((props) => {
   return (
     <button
-      class="rounded bg-blue-500 px-12 py-4 text-xl  text-white shadow-md transition-colors hover:bg-blue-600"
+      class="rounded bg-blue-500 px-12 py-4 text-xl text-white shadow-md transition-colors hover:bg-blue-600"
       onClick$={async () => {
         function loadConfetti() {
           return new Promise<any>((resolve, reject) => {
             if ((globalThis as any).confetti) {
               return resolve((globalThis as any).confetti as any);
             }
-            const script = document.createElement("script");
+            const script = document.createElement('script');
             script.src =
-              "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js";
+              'https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js';
             script.onload = () => resolve((globalThis as any).confetti as any);
             script.onerror = reject;
             document.head.appendChild(script);
@@ -38,7 +38,7 @@ export default component$<Props>((props) => {
             scalar?: number;
             startVelocity?: number;
             decay?: number;
-          },
+          }
         ) {
           confetti({
             ...defaults,

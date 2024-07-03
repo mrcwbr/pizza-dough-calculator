@@ -1,10 +1,10 @@
-import { component$, useStore } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import Ingredients from "~/components/ingredients";
-import Counter from "~/components/counter";
-import Procedure from "~/components/procedure";
-import Section from "~/components/section";
-import Confetti from "~/components/confetti";
+import { component$, useStore } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import Ingredients from '~/components/ingredients';
+import Counter from '~/components/counter';
+import Procedure from '~/components/procedure';
+import Section from '~/components/section';
+import Confetti from '~/components/confetti';
 
 export default component$(() => {
   const state = useStore({ pizzas: 2, gram: 240 });
@@ -49,11 +49,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "My Pizza Calculator",
+  title: 'My Pizza Calculator',
   meta: [
     {
-      name: "description",
-      content: "Calculate the ingredients for your pizza dough.",
+      name: 'description',
+      content: 'Calculate the ingredients for your pizza dough.',
     },
   ],
 };

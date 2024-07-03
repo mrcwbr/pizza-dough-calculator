@@ -1,5 +1,5 @@
-import { component$, useSignal } from "@builder.io/qwik";
-import Link from "~/components/link";
+import { component$, useSignal } from '@builder.io/qwik';
+import Link from '~/components/link';
 
 type Props = {
   title: string;

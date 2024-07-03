@@ -1,8 +1,8 @@
-import { component$ } from "@builder.io/qwik";
-import QwikLogo from "~/media/qwik.svg";
-import TailwindLogo from "~/media/tailwind.svg";
-import GithubLogo from "~/media/github.svg";
-import Link from "~/components/link";
+import { component$ } from '@builder.io/qwik';
+import QwikLogo from '~/media/qwik.svg';
+import TailwindLogo from '~/media/tailwind.svg';
+import GithubLogo from '~/media/github.svg';
+import Link from '~/components/link';
 
 export default component$(() => {
   const imageSize = 24;
