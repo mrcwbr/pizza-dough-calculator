@@ -12,7 +12,7 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: "https://mrcwbr.github.io/pizza-dough-calculator/",
+        origin: "https://mrcwbr.github.io/pizza-dough-calculator",
       }),
     ],
   };
