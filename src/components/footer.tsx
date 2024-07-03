@@ -2,17 +2,14 @@ import { component$ } from "@builder.io/qwik";
 import QwikLogo from "~/media/qwik.svg";
 import TailwindLogo from "~/media/tailwind.svg";
 import GithubLogo from "~/media/github.svg";
+import Link from "~/components/link";
 
 export default component$(() => {
   const imageSize = 24;
   return (
     <footer class="bg-gray-50">
       <div class="mx-auto flex max-w-7xl gap-8 p-4">
-        <a
-          class="flex items-center gap-2 font-semibold underline transition-colors hover:text-blue-500"
-          href="https://qwik.dev/"
-          target="_blank"
-        >
+        <Link href="https://qwik.dev/" blank>
           <img
             src={QwikLogo}
             alt="Qwik Logo"
@@ -20,13 +17,9 @@ export default component$(() => {
             height={imageSize}
           />
           Build with Quick
-        </a>
+        </Link>
 
-        <a
-          class="flex items-center gap-2 font-semibold underline transition-colors hover:text-blue-500"
-          href="https://tailwindcss.com/"
-          target="_blank"
-        >
+        <Link href="https://tailwindcss.com/" blank>
           <img
             src={TailwindLogo}
             alt="Tailwind Logo"
@@ -34,13 +27,9 @@ export default component$(() => {
             height={imageSize}
           />
           Styled with Tailwind
-        </a>
+        </Link>
 
-        <a
-          class="flex items-center gap-2 font-semibold underline transition-colors hover:text-blue-500"
-          href="https://github.com/mrcwbr/pizza-dough-calculator"
-          target="_blank"
-        >
+        <Link href="https://github.com/mrcwbr/pizza-dough-calculator" blank>
           <img
             src={GithubLogo}
             alt="Github Logo"
@@ -48,7 +37,7 @@ export default component$(() => {
             height={imageSize}
           />
           Opensource on Github
-        </a>
+        </Link>
       </div>
     </footer>
   );

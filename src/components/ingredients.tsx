@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { round } from "~/utils";
 import Section from "~/components/section";
 import Ingredient from "~/components/ingredient";
+import { FLOUR_URL, SEA_SALT_URL, SEMOLA_URL } from "~/constants";
 
 type Props = {
   pizzas: number;
@@ -22,7 +23,7 @@ export default component$<Props>((props) => {
       amountPer240gPizza: 1000 / 7,
       unit: "g",
       precision: 0,
-      url: "https://www.gustini.de/caputo-pizzamehl-nuvola.html",
+      url: FLOUR_URL,
       image:
         "https://www.waldispizza.de/media/image/product/34/lg/pizzamehl-caputo-nuvola1kg.webp",
     },
@@ -31,9 +32,9 @@ export default component$<Props>((props) => {
       amountPer240gPizza: 20,
       unit: "g",
       precision: 0,
-      url: "https://www.gustini.de/semola-di-grano-duro.html",
+      url: SEMOLA_URL,
       image:
-        "https://www.waldispizza.de/media/image/product/35/md/pizzamehl-caputo-semola1kg.png",
+        "https://centro-italia.de/wp-content/uploads/2021/03/51440-Caputo-Semola-Grano-Duro-Mehl.png",
     },
     {
       title: "Ice Cold Water",
@@ -47,6 +48,7 @@ export default component$<Props>((props) => {
       title: "Sea Salt",
       amountPer240gPizza: 30 / 7,
       precision: 0,
+      url: SEA_SALT_URL,
       unit: "g",
       image:
         "https://m.media-amazon.com/images/I/71jYEeBsTrL._AC_UF894,1000_QL80_.jpg",

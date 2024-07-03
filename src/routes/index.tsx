@@ -4,6 +4,7 @@ import Ingredients from "~/components/ingredients";
 import Counter from "~/components/counter";
 import Procedure from "~/components/procedure";
 import Section from "~/components/section";
+import Confetti from "~/components/confetti";
 
 export default component$(() => {
   const state = useStore({ pizzas: 2, gram: 240 });
@@ -39,6 +40,10 @@ export default component$(() => {
       <Ingredients pizzas={state.pizzas} gram={state.gram} />
 
       <Procedure />
+
+      <div class="flex justify-center pb-14">
+        <Confetti title="🍕 Enjoy 🍕" />
+      </div>
     </>
   );
 });

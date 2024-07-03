@@ -1,4 +1,5 @@
 import { component$, useSignal } from "@builder.io/qwik";
+import Link from "~/components/link";
 
 type Props = {
   title: string;
@@ -24,13 +25,9 @@ export default component$<Props>((props) => {
       </div>
       <div class="flex-1">
         {props.url ? (
-          <a
-            href={props.url}
-            target="_blank"
-            class="font-semibold underline transition-colors hover:text-blue-500"
-          >
+          <Link href={props.url} blank>
             {props.title}
-          </a>
+          </Link>
         ) : (
           <div class="font-semibold">{props.title}</div>
         )}
