@@ -27,6 +27,11 @@ jobs:
 
       - run: npm run build.server
 
+      - name: Patch base URL
+        run: |
+          sed -i 's|q:base="/build/"|q:base="/pizza-dough-calculator/build/"|g' ./dist/index.html
+        shell: bash
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

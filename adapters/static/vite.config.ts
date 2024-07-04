@@ -4,7 +4,6 @@ import baseConfig from '../../vite.config';
 
 export default extendConfig(baseConfig, () => {
   return {
-    base: '/pizza-dough-calculator/',
     build: {
       ssr: true,
       rollupOptions: {
@@ -14,6 +13,7 @@ export default extendConfig(baseConfig, () => {
     plugins: [
       staticAdapter({
         origin: 'https://mrcwbr.github.io',
+        base: 'pizza-dough-calculator',
       }),
     ],
   };
