@@ -8,7 +8,7 @@ export default component$(() => {
   const imageSize = 24;
   return (
     <footer class="bg-gray-50">
-      <div class="mx-auto flex max-w-7xl gap-8 p-4">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 p-4 md:flex-row">
         <Link href="https://qwik.dev/" blank>
           <img
             src={QwikLogo}
